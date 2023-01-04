@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
+import contact from "./images/Contact.png";
 
 export default function Contact(props) {
   return (
@@ -9,6 +10,9 @@ export default function Contact(props) {
         Any feedback or question? Connect with me or Leave a message!
       </p>
       <Footer />
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        <img src={contact} alt="contact" className="contact-img" />
+      </div>
       <div className="card-styling-contact">
         <form action="https://formspree.io/f/xyyayyne" method="POST">
           <div className="form-card">

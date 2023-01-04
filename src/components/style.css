@@ -56,11 +56,13 @@ body {
   width: 36%;
 }
 .main-content {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #cf005a;
+  text-align: center;
 }
 .sub-content {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 .name-light {
   color: #8f013e;
@@ -92,8 +94,27 @@ body {
     width: 16rem;
     height: 16rem;
   }
+  .main-content {
+    font-size: 1.8rem;
+    color: #cf005a;
+    text-align: center;
+  }
+  .sub-content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
-
+@media screen and (max-width: 550px){
+  .main-content {
+    font-size: 1.3rem;
+    color: #cf005a;
+    text-align: center;
+  }
+  .sub-content {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
 /* footer-styling */
 footer {
   display: flex;
@@ -339,6 +360,10 @@ textarea {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 1px 1px 5px #8a5469;
 }
+.contact-img {
+  width: 21rem;
+  height: 21rem;
+}
 @media screen and (max-width: 600px) {
   .form-content {
     display: flex;
@@ -347,5 +372,9 @@ textarea {
   textarea {
     width: 10rem;
     resize: none;
+  }
+  .contact-img {
+    width: 11rem;
+    height: 11rem;
   }
 }

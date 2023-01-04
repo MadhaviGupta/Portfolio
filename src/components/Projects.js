@@ -29,7 +29,7 @@ export default function Projects() {
             >
               <GitHubIcon />
             </a>
-            <a href="#" role="button" className="project-icons">
+            <a href="https://text-tools-madhavi.vercel.app/" role="button" className="project-icons">
               <LaunchIcon />
             </a>
           </div>
@@ -76,10 +76,18 @@ export default function Projects() {
             </p>
           </div>
           <div style={{ textAlign: "center" }}>
-            <a role="button" href="#" className="project-icons">
+            <a
+              role="button"
+              href="https://github.com/MadhaviGupta/Portfolio"
+              className="project-icons"
+            >
               <GitHubIcon />
             </a>
-            <a href="#" role="button" className="project-icons">
+            <a
+              role="button"
+              href="https://madhavigupta.vercel.app/"
+              className="project-icons"
+            >
               <LaunchIcon />
             </a>
           </div>
