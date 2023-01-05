@@ -1,6 +1,6 @@
 * {
   font-family: "Hanken Grotesk";
-  color: #cf005a;
+  color: #f50049;
 }
 body {
   background-color: #fff0f0;
@@ -10,7 +10,7 @@ body {
 /* home-styling */
 .listItems {
   text-decoration: none;
-  color: #cf005a;
+  color: #f50049;
   margin: 0 1rem;
   padding: 0.5rem;
   font-size: 1rem;
@@ -44,7 +44,7 @@ body {
   margin: 1.5rem 0.4rem;
   padding: 0.5rem;
   border-radius: 3px;
-  border: 1.5px solid #cf005a98;
+  border: 1.5px solid #f5004998;
   cursor: pointer;
 }
 .socialIcons:hover {
@@ -57,7 +57,7 @@ body {
 }
 .main-content {
   font-size: 2.5rem;
-  color: #cf005a;
+  color: #f50049;
   text-align: center;
 }
 .sub-content {
@@ -96,7 +96,7 @@ body {
   }
   .main-content {
     font-size: 1.8rem;
-    color: #cf005a;
+    color: #f50049;
     text-align: center;
   }
   .sub-content {
@@ -104,10 +104,10 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
   .main-content {
     font-size: 1.3rem;
-    color: #cf005a;
+    color: #f50049;
     text-align: center;
   }
   .sub-content {
@@ -141,8 +141,8 @@ footer {
   font-size: 1.3rem;
 }
 hr {
-  border-bottom: 1px solid #cf005a;
-  border-left: 1.3px solid #cf005a;
+  border-bottom: 1px solid #f50049;
+  border-left: 1.3px solid #f50049;
 }
 ul {
   list-style: url(images/coding.png);
@@ -175,8 +175,8 @@ ul {
   height: 11rem;
 }
 .downloadButton {
-  color: #cf005a;
-  border: 1.5px solid #cf005a;
+  color: #f50049;
+  border: 1.5px solid #f50049;
   border-radius: 3px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -215,7 +215,7 @@ ul {
   margin: 3px;
   padding: 0.5rem;
   border-radius: 3px;
-  border: 1.5px solid #cf005a98;
+  border: 1.5px solid #f5004998;
   cursor: pointer;
 }
 .card-styling-pro {
@@ -325,6 +325,7 @@ ul {
 }
 .form-content {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 .form-name {
@@ -351,8 +352,8 @@ textarea {
   resize: none;
 }
 .sendButton {
-  color: #cf005a;
-  border: 1.5px solid #cf005a;
+  color: #f50049;
+  border: 1.5px solid #f50049;
   border-radius: 3px;
   cursor: pointer;
   font-size: 1.15rem;
