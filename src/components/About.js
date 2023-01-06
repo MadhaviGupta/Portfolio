@@ -71,8 +71,9 @@ export default function About(props) {
                     <li>Material UI</li>
                   </ul>
                   <ul style={{ margin: "1.3rem" }}>
-                    <li>GitHub</li>
+                    <li>Git & GitHub</li>
                     <li>Visual Studio Code</li>
+                    <li>IntelliJ IDEA</li>
                     <li>Canva</li>
                   </ul>
                 </div>

@@ -10,10 +10,10 @@ function App() {
   const handleMode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "#0a0000";
+      document.body.style.backgroundColor = "#0d0103";
     } else {
       setMode("light");
-      document.body.style.backgroundColor = "#ffedf1";
+      document.body.style.backgroundColor = "#fff2f5";
     }
   };
   return (
