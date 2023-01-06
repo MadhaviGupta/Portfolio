@@ -91,11 +91,11 @@ export default function About(props) {
                 Longswitch Software Solutions Private Limited
               </span>
               . It is a software outsourcing company which provides software
-              solutions and technical consultancy. I was{" "}
+              solutions and technical consultancy. Being a{" "}
               <span className={`name-${props.mode}`}>
                 Frontend Web Developer Intern (ReactJS Developer)
               </span>{" "}
-              there and built various projects using various libraries.
+              there, I built various projects using various libraries.
             </p>
           </div>
         </div>

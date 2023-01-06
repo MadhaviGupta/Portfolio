@@ -32,7 +32,7 @@ export default function NavBar(props) {
             noWrap
             sx={{
               mr: 2,
-              color: "#f50049",
+              color: "be3455",
               display: { xs: "none", md: "flex" },
               fontFamily: "Hanken Grotesk",
               textDecoration: "none",
@@ -122,7 +122,7 @@ export default function NavBar(props) {
             noWrap
             sx={{
               mr: 2,
-              color: "#f50049",
+              color: "be3455",
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "Hanken Grotesk",
