@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import "./style.css";
+// import "./activePage.js";
 export default function NavBar(props) {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -22,24 +23,26 @@ export default function NavBar(props) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const activePage = document.location.pathname;
+  document.querySelectorAll(".listItems").forEach((link) => {
+    if (link.href.includes(activePage)) {
+      link.classList.add("active");
+    }
+  });
   return (
     <>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h5"
             noWrap
             sx={{
-              mr: 2,
-              color: "be3455",
               display: { xs: "none", md: "flex" },
               fontFamily: "Hanken Grotesk",
-              textDecoration: "none",
-              textTransform: "uppercase",
+              fontWeight: "600",
+              fontSize: "1.8rem",
             }}
           >
-            Madhavi Gupta
+            MADHAVI GUPTA
           </Typography>
           <Box
             sx={{
@@ -51,7 +54,6 @@ export default function NavBar(props) {
           >
             <MenuIcon size="large" onClick={handleOpenNavMenu} />
             <Menu
-              id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
@@ -67,7 +69,9 @@ export default function NavBar(props) {
               sx={{
                 display: { xs: "block", md: "none" },
                 "& .MuiPaper-root": {
-                  backgroundColor: `${props.mode === "light" ? "#fff0f0" : "black"}`,
+                  backgroundColor: `${
+                    props.mode === "light" ? "#fff2f5" : "#0d0103"
+                  }`,
                 },
               }}
             >
@@ -118,19 +122,17 @@ export default function NavBar(props) {
             </Menu>
           </Box>
           <Typography
-            variant="h6"
             noWrap
             sx={{
               mr: 2,
-              color: "be3455",
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "Hanken Grotesk",
-              textDecoration: "none",
-              textTransform: "uppercase",
+              fontWeight: "600",
+              fontSize: "1.5rem",
             }}
           >
-            Madhavi Gupta
+            MADHAVI GUPTA
           </Typography>
           <Box
             sx={{
@@ -142,39 +144,26 @@ export default function NavBar(props) {
           >
             <ul style={{ listStyle: "none", display: "flex" }}>
               <li>
-                <a href="/" onClick={handleCloseNavMenu} className="listItems">
+                <a href="/" className="listItems">
                   Home
                 </a>
               </li>
               <li>
-                <a
-                  onClick={handleCloseNavMenu}
-                  href="/about"
-                  className="listItems"
-                >
+                <a href="/about" className="listItems">
                   About
                 </a>
               </li>
               <li>
-                <a
-                  onClick={handleCloseNavMenu}
-                  href="/projects"
-                  className="listItems"
-                >
+                <a href="/projects" className="listItems">
                   Projects
                 </a>
               </li>
               <li>
-                <a
-                  onClick={handleCloseNavMenu}
-                  href="/contact"
-                  className="listItems"
-                >
+                <a href="/contact" className="listItems">
                   Contact
                 </a>
               </li>
             </ul>
-            <i class="bi bi-brightness-high"></i>
           </Box>
           <Box className="modeIcon">
             <Tooltip

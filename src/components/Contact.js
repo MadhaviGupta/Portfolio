@@ -7,10 +7,11 @@ export default function Contact(props) {
     <>
       <h1 className="heading">Get in touch!</h1>
       <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
-        Any feedback or question? Connect with me or Leave a message!
+        Any feedback or question? <br />
+        Connect with me or Leave a message!
       </p>
       <Footer />
-      <div style={{ display: "flex", justifyContent: "center"}}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <img src={contact} alt="contact" className="contact-img" />
       </div>
       <div className="card-styling-contact">
@@ -54,6 +55,9 @@ export default function Contact(props) {
             </button>
           </div>
         </form>
+      </div>
+      <div style={{ textAlign: "center", margin: "1rem" }}>
+        Illustrations by <a href="https://www.storyset.com">Storyset</a>
       </div>
     </>
   );

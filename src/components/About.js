@@ -20,24 +20,20 @@ export default function About(props) {
       <h1 className="heading">About</h1>
       <div className="card-styling-about">
         <div className="card-about">
-          <h2 className="heading2">About Me</h2>
+          <h2 className="heading2">Education & Hobbies</h2>
           <hr className="hr-tag" />
           <div className="content">
-            <img
-              src={about}
-              alt="about"
-              className="project-img"
-            />
+            <img src={about} alt="about" className="project-img" />
             <p style={{ margin: "1rem" }}>
               I am a pre-final year student pursuing{" "}
               <span className={`name-${props.mode}`}>
                 B.Tech. in Computer Science stream at Medicaps University,
-                Indore
+                Indore.
               </span>
-              . Currently, I'm learning Data Structures and Algorithms. Always
-              up for learning new things related to Tech and Food. I love to
-              design, listen music and watch movies. <br />
-              Apart from that, I like to read books and various online articles
+              Currently, I'm learning data structures and algorithms. Always up
+              for learning new things related to Tech and Food. I love to design
+              online content and listen music and watch movies. <br />
+              Apart from that, I like to read books and various articles
               concerned about technology, food, nation, health, mankind, etc.
             </p>
             <div></div>
@@ -89,14 +85,12 @@ export default function About(props) {
             <p style={{ margin: "1rem" }}>
               I worked at{" "}
               <span className={`name-${props.mode}`}>
-                Longswitch Software Solutions Private Limited
+                Longswitch Software Solutions Private Limited as a Frontend Web
+                Developer Intern.
               </span>
-              . It is a software outsourcing company which provides software
-              solutions and technical consultancy. Being a{" "}
-              <span className={`name-${props.mode}`}>
-                Frontend Web Developer Intern (ReactJS Developer)
-              </span>{" "}
-              there, I built various projects using various libraries.
+              It is a software outsourcing company which provides software
+              solutions and technical consultancy. There, I built various
+              projects using ReactJS and various libraries.
             </p>
           </div>
         </div>
