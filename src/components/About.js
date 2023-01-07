@@ -27,16 +27,15 @@ export default function About(props) {
             <p style={{ margin: "1rem" }}>
               I am a pre-final year student pursuing{" "}
               <span className={`name-${props.mode}`}>
-                B.Tech. in Computer Science stream at Medicaps University,
+                B.Tech. in computer science stream at Medicaps University,
                 Indore.
-              </span>
+              </span>{" "}
               Currently, I'm learning data structures and algorithms. Always up
-              for learning new things related to Tech and Food. I love to design
-              online content and listen music and watch movies. <br />
-              Apart from that, I like to read books and various articles
-              concerned about technology, food, nation, health, mankind, etc.
+              for learning new things related to tech and food. I love to design
+              write-ups, listen to music, and watch movies. <br />
+              Apart from that, I like reading books and various articles about
+              technology, food, nation, health, mankind, etc.
             </p>
-            <div></div>
           </div>
         </div>
         <div className="card-about">
@@ -83,13 +82,13 @@ export default function About(props) {
           <div className="content">
             <img src={experience} alt="experience" className="project-img" />
             <p style={{ margin: "1rem" }}>
-              I worked at{" "}
+              I worked as a{" "}
               <span className={`name-${props.mode}`}>
-                Longswitch Software Solutions Private Limited as a Frontend Web
-                Developer Intern.
+                Frontend Web Developer Intern at Longswitch Software Solutions
+                Private Limited.{" "}
               </span>
-              It is a software outsourcing company which provides software
-              solutions and technical consultancy. There, I built various
+              It is a software outsourcing company that provides software
+              solutions and technical consulting. There, I worked on various
               projects using ReactJS and various libraries.
             </p>
           </div>

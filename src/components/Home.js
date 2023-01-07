@@ -15,7 +15,7 @@ export default function Home(props) {
             <p style={{ marginTop: "1rem" }}>I'm Madhavi.</p>
           </div>
           <div className="sub-content">
-            A Front End Developer and A Tech Enthusiast.
+            A front-end developer and a tech enthusiast.
             <p>Using my skills to contribute to this wide Ocean of Tech!</p>
           </div>
         </div>
