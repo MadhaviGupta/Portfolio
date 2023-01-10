@@ -226,7 +226,7 @@ ul {
   margin: 3rem;
 }
 .card-pro {
-  width: 30%;
+  width: 35%;
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 7px;
@@ -253,10 +253,17 @@ ul {
     justify-content: center;
     align-items: center;
   }
-  .card-pro,
+  .card-pro {
+    width: 70%;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 7px;
+    background-color: rgba(190, 52, 84, 0.1);
+    box-shadow: 1px 1px 5px #8a5469;
+  }
   .card-about {
     width: 70%;
-    margin: 1.8rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     border-radius: 7px;
     background-color: rgba(190, 52, 84, 0.1);
@@ -276,10 +283,17 @@ ul {
     justify-content: center;
     align-items: center;
   }
-  .card-pro,
+  .card-pro {
+    width: 80%;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 7px;
+    background-color: rgba(190, 52, 84, 0.1);
+    box-shadow: 1px 1px 5px #8a5469;
+  }
   .card-about {
     width: 70%;
-    margin: 1.8rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     border-radius: 7px;
     background-color: rgba(190, 52, 84, 0.1);
@@ -297,10 +311,17 @@ ul {
     width: 6rem;
     height: 6rem;
   }
-  .card-pro,
+  .card-pro {
+    width: 99%;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 7px;
+    background-color: rgba(190, 52, 84, 0.1);
+    box-shadow: 1px 1px 5px #8a5469;
+  }
   .card-about {
     width: 70%;
-    margin: 1.8rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     border-radius: 7px;
     background-color: rgba(190, 52, 84, 0.1);

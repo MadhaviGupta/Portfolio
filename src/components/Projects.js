@@ -11,7 +11,7 @@ export default function Projects() {
       <h1 className="heading">My Projects</h1>
       <div className="card-styling-pro">
         <div className="card-pro">
-          <h2 className="heading2">Basic Portfolio Website (Beginner Level)</h2>
+          <h2 className="heading2">Basic Portfolio Website</h2>
           <hr className="hr-tag" />
           <div className="content">
             <img src={basic} alt="basic" className="project-img" />
@@ -45,7 +45,7 @@ export default function Projects() {
           <div className="content">
             <img src={texttools} alt="texttools" className="project-img" />
             <p style={{ display: "flex", alignItems: "center" }}>
-              TextTools is an text utility site which can be used to perform
+              TextTools is an text utility site which is used to perform
               different operations on text. <br />
               Build using ReactJS and Bootstrap.
             </p>
