@@ -159,7 +159,7 @@ ul {
   align-items: center;
 }
 .card-about {
-  width: 70%;
+  width: 60%;
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 7px;
@@ -255,7 +255,7 @@ ul {
   }
   .card-pro,
   .card-about {
-    width: 85%;
+    width: 70%;
     margin: 1.8rem;
     padding: 1.5rem;
     border-radius: 7px;
@@ -278,7 +278,7 @@ ul {
   }
   .card-pro,
   .card-about {
-    width: 85%;
+    width: 70%;
     margin: 1.8rem;
     padding: 1.5rem;
     border-radius: 7px;
@@ -294,12 +294,12 @@ ul {
 @media screen and (max-width: 500px) {
   .project-img,
   .about-img {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
   .card-pro,
   .card-about {
-    width: 85%;
+    width: 70%;
     margin: 1.8rem;
     padding: 1.5rem;
     border-radius: 7px;
