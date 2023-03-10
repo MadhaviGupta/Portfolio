@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Container,
@@ -12,7 +12,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import "./style.css";
-// import "./activePage.js";
 export default function NavBar(props) {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -24,11 +23,27 @@ export default function NavBar(props) {
     setAnchorElNav(null);
   };
   const activePage = document.location.pathname;
-  document.querySelectorAll(".listItems").forEach((link) => {
-    if (link.href.includes(activePage)) {
-      link.classList.add("active");
-    }
-  });
+  useEffect(() => {
+    return () => {
+      if (activePage === "/") {
+        document.getElementsByClassName("home")[0].style.backgroundColor =
+          "rgba(190, 52, 84, 0.1)";
+      }
+      if (activePage === "/about") {
+        document.getElementsByClassName("about")[0].style.backgroundColor =
+          "rgba(190, 52, 84, 0.1)";
+      }
+      if (activePage === "/projects") {
+        document.getElementsByClassName("projects")[0].style.backgroundColor =
+          "rgba(190, 52, 84, 0.1)";
+      }
+      if (activePage === "/contact") {
+        document.getElementsByClassName("contact")[0].style.backgroundColor =
+          "rgba(190, 52, 84, 0.1)";
+      }
+      console.log(document.getElementsByClassName("home"));
+    };
+  }, []);
   return (
     <>
       <Container maxWidth="xl">
@@ -80,7 +95,7 @@ export default function NavBar(props) {
                   <a
                     href="/"
                     onClick={handleCloseNavMenu}
-                    className="listItems"
+                    className="listItems home"
                   >
                     Home
                   </a>
@@ -91,7 +106,7 @@ export default function NavBar(props) {
                   <a
                     onClick={handleCloseNavMenu}
                     href="/about"
-                    className="listItems"
+                    className="listItems about"
                   >
                     About
                   </a>
@@ -102,7 +117,7 @@ export default function NavBar(props) {
                   <a
                     onClick={handleCloseNavMenu}
                     href="/projects"
-                    className="listItems"
+                    className="listItems projects"
                   >
                     Projects
                   </a>
@@ -113,7 +128,7 @@ export default function NavBar(props) {
                   <a
                     onClick={handleCloseNavMenu}
                     href="/contact"
-                    className="listItems"
+                    className="listItems contact"
                   >
                     Contact
                   </a>
@@ -144,22 +159,22 @@ export default function NavBar(props) {
           >
             <ul style={{ listStyle: "none", display: "flex" }}>
               <li>
-                <a href="/" className="listItems">
+                <a href="/" className="listItems home">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" className="listItems">
+                <a href="/about" className="listItems about">
                   About
                 </a>
               </li>
               <li>
-                <a href="/projects" className="listItems">
+                <a href="/projects" className="listItems projects">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="/contact" className="listItems">
+                <a href="/contact" className="listItems contact">
                   Contact
                 </a>
               </li>

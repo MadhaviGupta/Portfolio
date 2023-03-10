@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import contact from "./images/Contact.png";
 
-export default function Contact(props) {
+export default function Contact() {
   return (
     <>
       <h1 className="heading">Get in touch!</h1>
